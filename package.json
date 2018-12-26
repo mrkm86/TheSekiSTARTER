@@ -1,0 +1,99 @@
+{
+  "name": "io.cordova.thesekistarter",
+  "author": "",
+  "homepage": "",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
+    "watch": "ionic-app-scripts watch"
+  },
+  "dependencies": {
+    "@angular/common": "2.2.1",
+    "@angular/compiler": "2.2.1",
+    "@angular/compiler-cli": "2.2.1",
+    "@angular/core": "2.2.1",
+    "@angular/forms": "2.2.1",
+    "@angular/http": "2.2.1",
+    "@angular/platform-browser": "2.2.1",
+    "@angular/platform-browser-dynamic": "2.2.1",
+    "@angular/platform-server": "2.2.1",
+    "@ionic-native/android-permissions": "^4.12.2",
+    "@ionic-native/app-version": "^4.17.0",
+    "@ionic-native/barcode-scanner": "^4.12.2",
+    "@ionic-native/core": "^4.12.2",
+    "@ionic-native/diagnostic": "^4.17.0",
+    "@ionic-native/file": "^4.17.0",
+    "@ionic-native/ibeacon": "^4.17.0",
+    "@ionic-native/in-app-browser": "^4.18.0",
+    "@ionic-native/location-accuracy": "^4.17.0",
+    "@ionic-native/sqlite": "^4.13.0",
+    "@ionic/storage": "1.1.7",
+    "com.unarin.cordova.beacon": "^3.7.0",
+    "cordova-android": "7.1.2",
+    "cordova-plugin-android-permissions": "^1.0.0",
+    "cordova-plugin-app-version": "0.1.9",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-console": "^1.0.5",
+    "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-file": "6.0.1",
+    "cordova-plugin-ibeacon": "3.7.0",
+    "cordova-plugin-inappbrowser": "3.0.0",
+    "cordova-plugin-request-location-accuracy": "2.2.3",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-statusbar": "^2.2.1",
+    "cordova-plugin-vibration": "^3.1.0",
+    "cordova-plugin-whitelist": "^1.3.1",
+    "cordova-sqlite-storage": "^2.4.0",
+    "cordova.plugins.diagnostic": "4.0.10",
+    "ionic-angular": "2.0.1",
+    "ionic-native": "2.4.1",
+    "ionicons": "3.0.0",
+    "node-sass": "^4.9.3",
+    "rxjs": "5.0.0-beta.12",
+    "sw-toolbox": "3.4.0",
+    "zone.js": "0.6.26"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "1.1.0",
+    "typescript": "2.0.9"
+  },
+  "description": "Ionic2Tabs: An Ionic project",
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": [],
+  "-vs-binding": {
+    "BeforeBuild": [
+      "ionic:build"
+    ]
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-android-permissions": {},
+      "cordova-sqlite-storage": {},
+      "com.unarin.cordova.beacon": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-app-version": {},
+      "cordova.plugins.diagnostic": {},
+      "cordova-plugin-request-location-accuracy": {},
+      "cordova-plugin-inappbrowser": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

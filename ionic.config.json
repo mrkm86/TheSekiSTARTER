@@ -1,0 +1,8 @@
+{
+  "name": "io.cordova.thesekistarter",
+  "integrations": {
+    "cordova": {}
+  },
+  "v2": true,
+  "typescript": true
+}

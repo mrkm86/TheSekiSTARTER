@@ -1,0 +1,74 @@
+<ion-header>
+        <ion-navbar>
+            <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <ion-title>
+                設定
+            </ion-title>
+        </ion-navbar>
+    </ion-header>
+    
+    <ion-content>
+        <ion-list class="page-setting-content">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <h4>スキャン</h4>
+                        <ion-item>
+                            <ion-label>アプリを起動したときに、自動的にスキャンを開始する</ion-label>
+                            <ion-toggle #tgAutoScan name="tgAutoScan"></ion-toggle>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label stacked>スキャンの間隔</ion-label>
+                            <ion-select
+                                name="cboDelay" 
+                                [(ngModel)]="selDelay" 
+                                (change)="cboDelay_onChange(selDelay)">
+                                <ion-option *ngFor="let item of lstDelay" value={{item.key}} [selected]="selDelay == item.key" text-wrap>{{item.value}}</ion-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                    <ion-col>
+                        <h4>記録</h4>
+                        <ion-item no-lines>
+                            <ion-label stacked>ビーコンのスキャンを記録する</ion-label>
+                            <ion-toggle #tgEnableLog name="tgEnableLog"></ion-toggle>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>接続先URLに対して、JSON形式のデータがPOSTメソッドにて送信されます。</ion-label>
+                        </ion-item>
+    
+                        <ion-item>
+                            <ion-label stacked>接続先URL</ion-label>
+                            <ion-input #txtLoggingEndpoint name="txtLoggingEndpoint" placeholder="なし"></ion-input>
+                        </ion-item>
+    
+                        <ion-item>
+                            <ion-label stacked>ニックネーム</ion-label>
+                            <ion-input #txtDeviceName name="txtDeviceName" placeholder="なし"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                    <ion-col>
+                        <h4>その他</h4>
+                        <ion-item>
+                            <ion-label stacked>TheSeki STARTER URL</ion-label>
+                            <ion-input #txtSekiUrl name="txtSekiUrl" placeholder="なし"></ion-input>
+                        </ion-item>
+
+                        <ion-item no-lines>
+                            <ion-label stacked>Version</ion-label>
+                            <ion-label>1.0</ion-label>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-list>
+    </ion-content>

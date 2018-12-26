@@ -1,0 +1,33 @@
+page-setting{
+
+    .page-setting-content h4 {
+        font-weight: bold;
+        color: #0091C7;
+    }
+
+    .page-setting-content .item-md {
+        padding-left:0px !important;
+    }
+
+    .page-setting-content .item-md ion-label {
+        white-space: normal !important;
+        color: #626262;
+    }
+
+    .page-setting-content .select-md {
+        padding: 0px 8px 13px 0px !important;
+    }
+
+    .page-setting-content .select-md .select-icon{
+        display: none;
+    }
+
+    .page-setting-content .label-md[stacked]{
+        font-size: 1.6rem;
+        padding-bottom: 5px;
+    }
+
+    .label-content{
+
+    }
+}

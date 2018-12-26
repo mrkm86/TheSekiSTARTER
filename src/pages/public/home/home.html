@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{strTitle}}</ion-title>
+        <button icon-only class="button-browser" [hidden]="isBrowserHidden" (click)="btnBrowser_Clicked()">
+            <ion-icon name="ios-globe"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let beacon of beacons">
+        <ion-grid>
+            <ion-row>
+                <ion-col>Ibeacon</ion-col>
+                <ion-col text-right>{{beacon.accuracy}}</ion-col>
+            </ion-row>
+            <ion-row>
+                <!--<ion-col>AA:AA:AA:DD:DD:DD</ion-col>-->
+                <ion-col>{{strTimeScan}}</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>UUID・{{beacon.uuid}}</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>Major・{{beacon.major}}</ion-col>
+                <ion-col>Major・{{beacon.minor}}</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>RSSI {{beacon.rssi}} dBm</ion-col>
+                <ion-col>TX {{beacon.tx}} dBm</ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card>
+</ion-content>
+<ion-footer>
+    <button ion-button icon-only item-content name="btnScan" [className]="clsButton" (click)="btnScan_Clicked()">
+        <ion-icon [name]="icScan"></ion-icon>
+    </button>
+</ion-footer>
