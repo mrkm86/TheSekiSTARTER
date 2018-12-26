@@ -12,7 +12,6 @@ import { HomePage } from '../pages/public/home/home';
 import { SettingPage } from '../pages/public/setting/setting';
 
 //個別ページ ---------------------------------------------------------
-import { SearchPage } from '../pages/private/search/search';
 import { IBeacon } from '@ionic-native/ibeacon';
 import { BeaconServices } from '../inc/BeaconServices';
 import { Utils } from '../inc/Utils';
@@ -25,7 +24,6 @@ import { LocationAccuracy } from '@ionic-native/location-accuracy';
     MyApp,
     TabsPage,
     HomePage,
-    SearchPage,
     SettingPage
   ],
   imports: [
@@ -36,7 +34,6 @@ import { LocationAccuracy } from '@ionic-native/location-accuracy';
     MyApp,
     TabsPage,
     HomePage,
-    SearchPage,
     SettingPage
   ],
   providers: [

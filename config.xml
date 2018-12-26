@@ -67,17 +67,6 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
     </platform>
-    <platform name="windows">
-        <preference name="SplashScreenBackgroundColor" value="#ffffff" />
-        <splash height="300" src="resources/windows/splash/Splash620x300.scale-100.png" width="620" />
-        <splash height="1920" src="resources/windows/splash/splashscreenphone.png" width="1152" />
-        <icon height="150" src="resources/windows/icon/logo150x150.scale-100.png" width="150" />
-        <icon height="310" src="resources/windows/icon/logo310x310.scale-100.png" width="310" />
-        <icon height="44" src="resources/windows/icon/logo44x44.scale-100.png" width="44" />
-        <icon height="50" src="resources/windows/icon/logo50x50.scale-100.png" width="50" />
-        <icon height="71" src="resources/windows/icon/logo71x71.scale-100.png" width="71" />
-        <icon height="150" src="resources/windows/icon/wide310x150.scale-100.png" width="310" />
-    </platform>
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
